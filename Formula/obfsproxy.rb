@@ -10,7 +10,7 @@ class Obfsproxy < Formula
   depends_on 'pkg-config'
   depends_on 'libevent'
   depends_on 'openssl'
-  depends_on 'tzarksyz/tor/tor'
+  depends_on 'tzarskyz/tor/tor'
 
   def install
     ENV.append 'PKG_CONFIG', '/usr/local/bin/pkg-config'
