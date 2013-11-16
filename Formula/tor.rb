@@ -2,9 +2,9 @@ require 'formula'
 
 class Tor < Formula
   homepage 'https://www.torproject.org/'
-  version "0.2.4.17-rc"
+  version "0.2.4.18-rc"
   url 'https://www.torproject.org/dist/tor-0.2.4.17-rc.tar.gz'
-  sha256 '9d143b950a1c920e455bb41f2773e2bee8818e4a81aa9b1877db47d643b95d65'
+  sha256 'e4e644274e24c2270f638fbcbe1c9167607ec98332a1cef4c3d03f408eb3aef5'
   head 'git://git.torproject.org/git/tor.git'
 
   option 'with-upnp', 'Enable upnp "PortForwarding" option.'
