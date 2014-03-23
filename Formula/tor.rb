@@ -8,11 +8,9 @@ class Tor < Formula
   head 'git://git.torproject.org/git/tor.git'
 
   option 'with-upnp', 'Enable upnp "PortForwarding" option.'
-  option "with-brewed-openssl", "Build with Homebrew's OpenSSL instead of the system version"
-  depends_on 'openssl' if build.with? 'brewed-openssl'
 
   depends_on 'libevent'
-  depends_on 'openssl' if build.with? 'brewed-openssl'
+  depends_on 'openssl'
   depends_on 'miniupnpc' if build.include? 'with-upnp'
 
   def install
